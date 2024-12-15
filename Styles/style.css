@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*Global Styles*/
+.red{
+    color: rgb(255, 0, 0);
+}
+.black{
+    color: rgb(7, 2, 17);
+}
+
+/*Typography*/
+.text-align{
+    text-align: center;
+}
+.titles{
+    font-family: Merriweather;
+    font-weight: 900;
+    font-size: 72px;
+    margin: 0;
+}
+.title-2{
+    color: rgb(7, 2, 17);
+    font-family: Merriweather;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.title-3{
+    color: rgb(255, 0, 0);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+}
+.sub-title{
+    color: rgb(255, 0, 0);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+.description{
+    color: rgba(7, 2, 17, 0.6);
+    font-family: Merriweather;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+/*Button*/
+.btn-primary{
+    padding: 16px 32px;
+    color: aliceblue;
+    background-color: rgb(255, 0, 0);
+    font-family: inter;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+  }
+  .btn::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  /* glow */
+  .btn::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #FF0000, #FF7300, #FFFB00, #48FF00,
+      #00FFD5, #002BFF, #FF00C8, #FF0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  
+  @keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+  
+  /* hover */
+  .btn:hover::before {
+    opacity: 1;
+  }
+  
+  .btn:active:after {
+    background: transparent;
+  }
+  
+  .btn:active {
+    color: #000;
+    font-weight: bold;
+  }
+
+
+/*Header*/
+header nav{
+    display: flex;
+    width: 1320px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+header .nav-title{
+    font-size: 42px;
+    font-family: Merriweather;
+}
+header nav ul{
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+}
+
+header nav ul li{
+    list-style: none;
+    font-family: Merriweather;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Merriweather;
+    font-weight: 600;
+}
+
+/*Hero Start*/
+#hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1340px;
+    height: 600px;
+    margin: 0 auto;
+    row-gap: 0px;
+    border-radius: 16px;
+    background-image: linear-gradient(180.00deg, rgb(7, 2, 17),rgba(7, 2, 17, 0) 100%), url(/images/Banner\ Image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#hero .hero-sub{
+    color: rgb(255, 255, 255);
+    font-family: Merriweather;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 0px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+#hero .hero-title{
+    color: rgb(255, 255, 255);
+    width: 632px;
+    font-family: Merriweather;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 95px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/*section 2 start*/
+#discount{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+    padding: 120px 0 120px 0;
+}
+
+#discount .offer{
+    color: rgb(255, 0, 0);
+    font-family: Inter;
+    font-size: 88px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+#discount .offer-h-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+}
+
+#discount .offer-sub{
+    color: rgb(255, 0, 0);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+#discount .offer-sub-2{
+    color: rgb(7, 2, 17);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0%;
+    margin: 0;
+    text-align: center;
+}
+
+/*section 3 start*/
+#party{
+    display: flex;
+    flex-direction: row;
+    width: 1320px;
+    height: 600px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+    background-image: linear-gradient(90.00deg, rgb(7, 2, 17),rgba(7, 2, 17, 0) 100%), url(/images/Vectorrr.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    margin-bottom: 120px;
+}
+
+#party .party-div1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    row-gap: 24px;
+}
+#party .party-div1 .party-title{
+    color: rgb(255, 255, 255);
+    font-family: Merriweather;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 88px;
+    letter-spacing: 11%;
+    text-align: left;
+    width: 642px;
+    margin: 0;
+}
+#party .party-div1 .party-dscrptn{
+    color: rgba(255, 255, 255, 0.8);
+    font-family: Inter;
+    width: 697px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+}
+
+/*section 4 - Place, Date, Time -start*/
+#vanue{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+    height: 482px;
+    width: 1320px;
+    margin: 0 auto;
+    border-radius: 16px;
+    background: linear-gradient(180.00deg, rgba(255, 0, 0, 0.1),rgba(255, 0, 0, 0) 100%);
+}
+#vanue .vanue-conatiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+#vanue .vanue-conatiner .vanue-title{
+    margin: 0;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/*Section 5 -Coming soon*/
+#coming-soon{
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    width: 1320px;
+    margin: 0 auto;
+    column-gap: 40px;
+}
+#coming-soon .best-offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}
+#coming-soon .best-offer .coming-dscrptn{
+    width: 70%;
+}
+#coming-soon .coming-img{
+    display: flex;
+    align-items: start;
+    justify-content: left;
+}
+
+#coming-soon .coming-img .image-class{
+    width: 463px;
+    height: 463px;
+    padding: 25px;
+    border: solid 12px rgb(255, 0, 0);
+    border-radius: 300px;
+}
+
+#coming-soon .New-year{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+#coming-soon .New-year .New-year-dscrptn{
+    width: 276px;
+}
+
