@@ -355,7 +355,6 @@ header nav ul li a{
     align-items: start;
     justify-content: left;
     width: auto;
-    flex-wrap: wrap;
     box-sizing: border-box;
 }
 
@@ -369,6 +368,7 @@ header nav ul li a{
 
 #coming-soon .New-year{
     display: flex;
+    flex-flow: column;
     flex-direction: column;
     justify-content: center;
     align-items: start;
@@ -380,3 +380,229 @@ header nav ul li a{
     width: 220px;
 }
 
+/*Section 6 -Holidays Sale-Start*/
+#holiday{
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+    align-items: center;
+    justify-content: center;
+    width: 1320px;
+    margin: auto;
+}
+#holiday .holiday-sub{
+    color: rgb(7, 2, 17);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin:0;
+}
+#holiday .holiday-title{
+    font-family: Merriweather;
+    font-size: 72px;
+    font-weight: 900;
+    line-height: 91px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0;
+}
+#holiday .holiday-dscrptn{
+    color: rgba(7, 2, 17, 0.6);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 95vh;
+    margin: 0;
+}
+#holiday .holiday-discount{
+    display: flex;
+    width: 1320px;
+    flex-direction: row;
+    margin: auto;
+    padding: 130px 0 0 0 ;
+    align-items: end;
+    justify-content: end;
+}
+
+#holiday .gift-box-container{
+    width: 1320px;
+    margin: auto;
+    border-radius: 16px 0px 16px 16px;
+    background: rgb(255, 0, 0);
+}
+#holiday .gift-box{
+    margin: -380px 0 0 0;
+}
+/*Section 7 - Portfolio -Start*/
+#portfolio{
+    width: 1320px;
+    margin: auto;
+    padding: 130px 0 130px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+#portfolio .description{
+    width: 56%;
+}
+#portfolio .portfolio-gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    column-gap: 20px;
+}
+
+/*Section 8 - Subscribe Newsleter -Start*/
+#newsletter{
+    width: 1320px;
+    margin: auto;
+    border-radius: 16px;
+    background: rgba(255, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    padding: 130px 0 130px 0;
+}
+#newsletter p{
+    width: 56%;
+}
+
+form {
+    width: 648px;
+    border-radius: 50px;
+    background-color: #fff0f0; /* Light pink background */
+    overflow: hidden;
+    display: flex;
+    vertical-align: middle;
+  }
+
+  /* Email input field */
+form input[type="email"] {
+    width: 70%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: Merriweather;
+    padding: 12px 20px;
+    color: #555;
+    box-sizing: border-box;
+  }
+
+  /* Placeholder style */
+form input[type="email"]::placeholder {
+    color: #aaa;
+  }
+
+  /* Subscribe button */
+form button {
+    width: 30%;
+    border: none;
+    outline: none;
+    background-color: #ff0000; /* Red background */
+    color: #fff;
+    font-size: 16px;
+    font-family: Merriweather;
+    font-weight: bold;
+    padding: 12px 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 0.3s;
+  }
+form button:hover {
+    background-color: #cc0000; /* Slightly darker red */
+  }
+
+/*Section 9 - Footer -Start*/
+#footer{
+    background: rgb(7, 2, 17);
+    padding: 130px 0 130px 0;
+    margin: 130px 0 0 0;
+}
+#footer .footer-details{
+    display: flex;
+    width: 1320px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 0 0 50px 0;
+}
+#footer .footer-details .address{
+    color: rgb(255, 255, 255);
+    width: 20vw;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+#footer .footer-details .contact .icon-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 8px;
+}
+#footer .footer-details .contact p{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 4900;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration: none;
+    margin: 0;
+    padding: 0 ;
+}
+#footer .footer-details .contact a{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+#footer .social-media{
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 50px 0;
+    column-gap: 20px;
+    border: solid rgba(255, 255, 255, 0.15);
+    border-width: 1px 0 1px 0;
+}
+.copyright{
+    width: 1320px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0 0 0 ;
+}
+
+.copyright p{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+}
